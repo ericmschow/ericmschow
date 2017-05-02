@@ -114,7 +114,7 @@ p {
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     ul.topnav li.right,
     ul.topnav li {
       float: none;

@@ -6,6 +6,11 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
+      ul.playlist li {
+        float: left;
+        margin: 20px;
+        list-style-type: none;
+      }
       #fb {
         margin-right: 1em;
       }
@@ -94,20 +99,26 @@
       <br><p>My main band, Process of Illumination. We're an instrumental prog rock band from The Woodlands, TX, inspired by Rush, Muse, and video game music.</p>
       <p>Please check out our first EP, "Fifteen", below. Our full album "Radiant Memory" is due out summer '17!</p>
 
-      <p><a href="http://www.facebook.com/poibandtx"><img id="fb" src="fb.png" alt="Facebook logo" width=25 height=25></a>Find Process of Illumination <a href="http://www.facebook.com/poibandtx">on Facebook</a> for latest news and show dates!</p>
+      <p><a href="http://www.facebook.com/poibandtx"><img id="fb" src="fb.png" alt="Facebook logo" width=20 height=20></a>Find Process of Illumination <a href="http://www.facebook.com/poibandtx">on Facebook</a> for latest news and show dates!</p>
       <!-- <div id="player">
         <iframe src="https://open.spotify.com/embed?uri=spotify:album:4EtbzbYEU2XlktpXeUykCx&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
       </div> -->
-      <div class="player">
-        <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE"></div>
-      </div>
-      <div class="player">
-        <div class="youtube-player" id="fifteen" data-id="kS-2huMyQic"></div>
-      </div>
-      <div class="player">
-        <div class="youtube-player" id="fifteen" data-id="w--Ksg_I4bM"></div>
-      </div>
-
+      <ul class="playlist">
+        <li>
+          <div class="player">
+            <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE"></div>
+          </div>
+        </li>
+          <div class="player">
+            <div class="youtube-player" id="fifteen" data-id="kS-2huMyQic"></div>
+          </div>
+        </li>
+        <li>
+          <div class="player">
+            <div class="youtube-player" id="fifteen" data-id="w--Ksg_I4bM"></div>
+          </div>
+        </li>
+      </ul>
     </main>
     <script>
 

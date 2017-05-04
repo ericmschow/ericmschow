@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
       ul.playlist li {
         float: left;
-        margin: 20px;
+        margin: .5%;
+        width: 32%;
+        height: 50%;
         list-style-type: none;
+        border: 1px solid green;
       }
       #fb {
         margin-right: 1em;
@@ -19,10 +23,12 @@
       }
 
       .player {
-        border: 1px solid red;
-        width: 33%;
-        height: 50%;
-        float: left;
+        display:flex;
+        flex-flow: row nowrap;
+        /*border: 1px solid red;*/
+        /*width: 80%;
+        height: 50%;*/
+        /*float: left;*/
       }
       .youtube-player {
         position: relative;
@@ -80,7 +86,7 @@
       }
     </style>
   </head>
-  <body background="https://i.imgur.com/Alyt1cv.jpg">
+  <body background="https://i.imgur.com/Alyt1cv.jpg"><div id='gblurrer'>
   <!-- <body> -->
     <nav>
       <div>
@@ -103,23 +109,19 @@
       <!-- <div id="player">
         <iframe src="https://open.spotify.com/embed?uri=spotify:album:4EtbzbYEU2XlktpXeUykCx&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
       </div> -->
-      <ul class="playlist">
-        <li>
+      <div class='logocontainer'>
+        <img class='centerfed' id='logo' src="poilogoresized.png" alt="Process of Illumination logo" >
+      </div>
           <div class="player">
-            <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE"></div>
+            <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE?list=PLPWMq-1ULbgKsrbZLrBWN7M-NTEwGBjLo"></div>
           </div>
-        </li>
-          <div class="player">
-            <div class="youtube-player" id="fifteen" data-id="kS-2huMyQic"></div>
-          </div>
-        </li>
-        <li>
-          <div class="player">
-            <div class="youtube-player" id="fifteen" data-id="w--Ksg_I4bM"></div>
-          </div>
-        </li>
+
       </ul>
-    </main>
+    </div></main>
+
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- youtube minimizer -->
     <script>
 
       /* Light YouTube Embeds by @labnol */
@@ -139,7 +141,8 @@
           });
 
       function labnolThumb(id) {
-          var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        // hardcoded thumbnail image to fix playlist not having thumbnail
+          var thumb = '<img src="https://i.ytimg.com/vi/kS-2huMyQic/hqdefault.jpg">',
               play = '<div class="play"></div>';
           return thumb.replace("ID", id) + play;
       }

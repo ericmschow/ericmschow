@@ -3,17 +3,17 @@
   <head>
     <title>Eric Schow</title>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <style>
-      ul.playlist li {
+      /*ul.playlist li {
         float: left;
         margin: .5%;
         width: 32%;
         height: 50%;
         list-style-type: none;
-        border: 1px solid green;
+        border: 1px solid green;*/
       }
       #fb {
         margin-right: 1em;
@@ -23,8 +23,8 @@
       }
 
       .player {
-        display:flex;
-        flex-flow: row nowrap;
+        /*box-shadow: 10px 10px 5px #111;*/
+        overflow: hidden;
         /*border: 1px solid red;*/
         /*width: 80%;
         height: 50%;*/
@@ -88,7 +88,7 @@
   </head>
   <body background="https://i.imgur.com/Alyt1cv.jpg"><div id='gblurrer'>
   <!-- <body> -->
-    <nav>
+    <!-- <nav>        OLD NAV
       <div>
         <h1>ERIC SCHOW</h1>
         <ul class='topnav'>
@@ -100,25 +100,90 @@
           <li class="right"><a href="contact.html" id="last">CONTACT</a></li>
         </ul>
       </div>
+    </nav> -->
+    <div class="page-header">
+      <h1>ERIC SCHOW   <small>Rockstar turned coder</small></h1>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">BIO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CODE <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Walking Bassline Generator &mdash; Python</a> </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Catch the Monster &mdash; Pygame</a></li>
+                <!-- <li><a href="#">Something else here</a></li>
+
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li> -->
+              </ul>
+            </li>
+            <li class="active"><a href="#">MUSIC<span class="sr-only">(current)</span></a></li>
+            <li class='next'><a class='next' href="#">RESUME</a></li>
+            <li><a href="https://www.linkedin.com/in/eric-schow-3b789a60/">LINKEDIN</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right right">
+            <li><a href="#">CONTACT</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
     <main>
-      <br><p>My main band, Process of Illumination. We're an instrumental prog rock band from The Woodlands, TX, inspired by Rush, Muse, and video game music.</p>
-      <p>Please check out our first EP, "Fifteen", below. Our full album "Radiant Memory" is due out summer '17!</p>
+      <!-- <div class='row'> -->
+        <div class='col-lg-8' 'col-md-6' 'col-xs-4'>
+          <div class='logocontainer'>
+            <img class='img-responsive center-block' id='logo' src="poilogoresized.png" alt="Process of Illumination logo" width=825 height=291>
+          </div>
+        <br><p>The background image is me on stage with my main band, Process of Illumination. We're an instrumental prog rock band from The Woodlands, TX, inspired by Rush, Muse, and video game music.</p>
+        <p> Our full album "Radiant Memory" is due out summer '17!</p>
+        <p>Find Process of Illumination <a href="http://www.facebook.com/poibandtx">on Facebook</a> for latest news and show dates!</p>
+        <!-- <a href="http://www.facebook.com/poibandtx"><img id="fb" src="fb.png" alt="Facebook logo" width=20 height=20></a> -->
+        <!-- <div id="player">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:album:4EtbzbYEU2XlktpXeUykCx&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div> -->
 
-      <p><a href="http://www.facebook.com/poibandtx"><img id="fb" src="fb.png" alt="Facebook logo" width=20 height=20></a>Find Process of Illumination <a href="http://www.facebook.com/poibandtx">on Facebook</a> for latest news and show dates!</p>
-      <!-- <div id="player">
-        <iframe src="https://open.spotify.com/embed?uri=spotify:album:4EtbzbYEU2XlktpXeUykCx&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-      </div> -->
-      <div class='logocontainer'>
-        <img class='centerfed' id='logo' src="poilogoresized.png" alt="Process of Illumination logo" >
-      </div>
+        </div>
+        <div class='col-lg-4' 'col-md-6' 'col-xs-8'>
+          <br> <br>
+          <p class='text-center'>Please check out our first EP, "Fifteen", below.</p>
           <div class="player">
             <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE?list=PLPWMq-1ULbgKsrbZLrBWN7M-NTEwGBjLo"></div>
           </div>
-
-      </ul>
-    </div></main>
-
+        </div>
+      <!-- </div> -->
+    <!-- <hr> -->
+    <div class='sticky-footer'>
+      <p class='small'>Photo credit to Dailey Hubbard</p>
+    </div>
+    </main>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- youtube minimizer -->

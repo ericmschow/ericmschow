@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
     <style>
       /*ul.playlist li {
         float: left;
@@ -86,25 +86,11 @@
       }
     </style>
   </head>
-  <body background="https://i.imgur.com/Alyt1cv.jpg"><div id='gblurrer'>
-  <!-- <body> -->
-    <!-- <nav>        OLD NAV
-      <div>
-        <h1>ERIC SCHOW</h1>
-        <ul class='topnav'>
-          <li><a href="index.html">BIO</a></li>
-          <li><a href="code.html" class='previous'>CODE</a></li>
-          <li><a href="music.html" class='active'>MUSIC</a></li>
-          <li><a href="resume.html" class='next'>RESUME</a></li>
-          <li><a href="https://www.linkedin.com/in/eric-schow-3b789a60/">LINKEDIN</a></li>
-          <li class="right"><a href="contact.html" id="last">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav> -->
+  <body background="https://i.imgur.com/Alyt1cv.jpg">
     <div class="page-header">
-      <h1>ERIC SCHOW   <small>Rockstar turned coder</small></h1>
+      <h1>ERIC SCHOW<small> Rockstar turned coder</small></h1>
     </div>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -114,28 +100,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">BIO</a>
+          <!-- <a class="navbar-brand" href="index.html">BIO</a> -->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
+            <li><a href='/index.html'>BIO</a>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CODE <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Walking Bassline Generator &mdash; Python</a> </li>
+                <li><a href="bassline.html">Walking Bassline Generator &mdash; Python</a> </li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Catch the Monster &mdash; Pygame</a></li>
+                <li><a href="monster.html">Catch the Monster &mdash; Pygame</a></li>
                 <!-- <li><a href="#">Something else here</a></li>
 
                 <li><a href="#">Separated link</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">One more separated link</a></li> -->
+                <li role="separator" class="divider"></li>
               </ul>
             </li>
             <li class="active"><a href="#">MUSIC<span class="sr-only">(current)</span></a></li>
-            <li class='next'><a class='next' href="#">RESUME</a></li>
+            <li class='next'><a class='next' href="resume.html">RESUME</a></li>
             <li><a href="https://www.linkedin.com/in/eric-schow-3b789a60/">LINKEDIN</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right right">
@@ -176,11 +164,6 @@
             <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE?list=PLPWMq-1ULbgKsrbZLrBWN7M-NTEwGBjLo"></div>
           </div>
         </div>
-      <!-- </div> -->
-    <!-- <hr> -->
-    <div class='sticky-footer'>
-      <p class='small'>Photo credit to Dailey Hubbard</p>
-    </div>
     </main>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

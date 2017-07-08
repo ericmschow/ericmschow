@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eric Schow's personal website and portfolio">
+    <meta name="author" content="Eric Schow">
+
+    <title>Eric Schow</title>
+    <!-- firebase -->
+    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and  media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Eric Schow</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>WELCOME</h1>
+            <br>
+            <h3 class='headerbig'>Eric Schow <span class='green'>&#8212</span> rockstar turned coder</h3>
+            <h3 class='headersmall'>Eric Schow<span class='green'>:</span></h3>
+            <h4 class='headersmall'>Rockstar turned coder</h4>
+            <br>
+            <a href="#about" class="btn btn-light btn-lg">Explore my life</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Musician turned <strong>full-stack web developer</strong> specializing in JavaScript and Python</h2>
+                    <br> <br>
+                    <p class="lead">But you must be wondering...</p>
+                    <p class="lead">"Why choose this guy?"</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>My Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Constant Learner</strong>
+                                </h4>
+                                <p>I'm always trying to understand my stack more deeply.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shower fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Clean Coder</strong>
+                                </h4>
+                                <p>I can adopt any code style convention, including yours.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-handshake-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Proven Leader</strong>
+                                </h4>
+                                <p>Three years' management experience in a real estate maintenance background.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-check-square-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Problem Solver</strong>
+                                </h4>
+                                <p>I possess strong critical thinking and troubleshooting skills.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h2>My Languages</h2>
+            <!-- <hr class='small green'> -->
+            <div class='row glyphicons'>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+              <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+              <i class="devicon-python-plain-wordmark" title="Python3"></i>
+
+            </div>
+            <hr class='small green thick'>
+            <h2>My Technologies</h2>
+            <!-- <hr class='small green'> -->
+            <div class="row glyphicons-small-row glyphicons">
+              <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
+              <i class="devicon-django-line" title="Django"></i>
+              <i class="devicon-express-original" title="Express"></i>
+              <i class="devicon-github-plain-wordmark" title="GitHub"></i>
+              <i class="devicon-heroku-original-wordmark" title="Heroku"></i>
+            </div>
+            <div class="row glyphicons-small-row glyphicons">
+              <i class="devicon-less-plain-wordmark" title="Less"></i>
+              <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+              <i class="devicon-nodejs-plain" title="NodeJS"></i>
+              <i class="devicon-postgresql-plain-wordmark" title="PostgresSQL"></i>
+              <i class="devicon-react-original-wordmark" title="React"></i>
+            </div>
+
+            <div class='row glyphicons-big-row'>
+              <div class="col-xs-12 glyphicons">
+                <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
+                <i class="devicon-django-line" title="Django"></i>
+                <i class="devicon-express-original" title="Express"></i>
+                <i class="devicon-github-plain-wordmark" title="GitHub"></i>
+                <i class="devicon-heroku-original-wordmark" title="Heroku"></i>
+                <i class="devicon-less-plain-wordmark" title="Less"></i>
+                <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+                <i class="devicon-nodejs-plain" title="NodeJS"></i>
+                <i class="devicon-postgresql-plain-wordmark" title="PostgresSQL"></i>
+                <i class="devicon-react-original-wordmark" title="React"></i>
+              </div>
+          </div>
+          <!-- <div class='row' id="gradient"> -->
+          </div>
+        </div>
+
+
+    </aside>
+
+    <!-- Portfolio -->
+    <div class="modal fade" id="ScorehoardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close orange" data-dismiss="modal" aria-label="Close"><span class='orange' aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"><a href="www.scorehoard.com">ScoreHoard</a></h4>
+          </div>
+          <div class="modal-body">
+            <a href="www.scorehoard.com">ScoreHoard</a> is an API that keeps track of stats and scores for video game makers.
+            Version 1.0.0 allows Add Requests (to add usernames and scores into our database)
+            and Leaderboard Requests (to retrieve stored data for your game).
+            <br> <br>
+            In this four-person project, I worked primarily on the back-end in a
+            paired-programming setup,
+            and I also developed the front-end interface for the API in the game demo featured
+            on the website.
+
+            <br> <br> Please check out the <a href="github.com/antweer/scorehoard">GitHub repo</a> or the back-end code below:
+            <br> <br>
+            <!-- <hr class="small green"> -->
+            <!-- <iframe src="https://codepen.io/ericmschow/full/xrzggw" height="800" width="800"></iframe>  -->
+            <p data-height="300" data-theme-id="30320" data-slug-hash="xrzggw" data-default-tab="js" data-user="ericmschow" data-embed-version="2" data-pen-title="ScoreHoard" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/ericmschow/pen/xrzggw/">ScoreHoard</a> by Eric (<a href="https://codepen.io/ericmschow">@ericmschow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="SetlistModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close orange" data-dismiss="modal" aria-label="Close"><span class='orange' aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"><a href="#">A Better Setlist</a></h4>
+          </div>
+          <div class="modal-body">
+            <a href="#">This</a> is a placeholder until the individual project is done.
+            <br> <br>
+
+
+            <br> <br> Please check out the back-end code below:
+            <br> <br>
+            <!-- <hr class="small green"> -->
+            <!-- <iframe src="https://codepen.io/ericmschow/full/xrzggw" height="800" width="800"></iframe>  -->
+            <p data-height="300" data-theme-id="30320" data-slug-hash="xrzggw" data-default-tab="js" data-user="ericmschow" data-embed-version="2" data-pen-title="ScoreHoard" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/ericmschow/pen/xrzggw/">ScoreHoard</a> by Eric (<a href="https://codepen.io/ericmschow">@ericmschow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Projects</h2>
+                    <hr class="small portfolio-accent">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <!-- <h4>ScoreHoard</h4> -->
+
+                                  <img id="scorehoard" class="img-portfolio img-responsive"
+                                  src="img/scorehoard-logo-500x333.png"
+                                  alt="ScoreHoard gorilla logo"
+                                  data-toggle="modal" data-target="#ScorehoardModal">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive"
+                                    src="img/portfolio-2.jpg"
+                                    alt="Setlist logo"
+                                    data-toggle="modal" data-target="#SetlistModal">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Contact me today:</h3>
+                    <a href="mailto:eric@ericmschow.com" class="btn btn-lg btn-light">Email</a>
+                    <br class='headersmall'>
+                    <a href="/img/SchowEric-resume.pdf"  target="_blank" id='resume-button' class="btn btn-lg btn-light">Resume.pdf</a>
+                    <br class='headersmall'>
+                    <a href="http://www.github.com/ericmschow" target="_blank" class="btn btn-lg btn-light">Github</a>
+                    <br class='headersmall'>
+                    <a href="http://www.linkedin.com/in/ericmschow" target="_blank" class="btn btn-lg btn-light">LinkedIn</a>
+                    <hr class='small green'>
+                    <h4>P.S.: Curious about the music I mentioned before? Check out my band, Process of Illumination!</h4>
+                    <br>
+                    <div class="player">
+                      <div class="youtube-player" id="fifteen" data-id="a216pG2Z3oE?list=PLPWMq-1ULbgKsrbZLrBWN7M-NTEwGBjLo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Eric Schow</strong>
+                    </h4>
+                    <p>Houston, TX
+                        <br><small>and willing to relocate!</small></p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:eric@ericmschow.com">eric@ericmschow.com</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Eric Schow 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- youtube minimizer -->
+    <script>
+
+      /* Light YouTube Embeds by @labnol */
+      /* Web: http://labnol.org/?p=27941 */
+
+      document.addEventListener("DOMContentLoaded",
+          function() {
+              var div, n,
+                  v = document.getElementsByClassName("youtube-player");
+              for (n = 0; n < v.length; n++) {
+                  div = document.createElement("div");
+                  div.setAttribute("data-id", v[n].dataset.id);
+                  div.innerHTML = labnolThumb(v[n].dataset.id);
+                  div.onclick = labnolIframe;
+                  v[n].appendChild(div);
+              }
+          });
+
+      function labnolThumb(id) {
+        // hardcoded thumbnail image to fix youtube playlist not having thumbnail
+          var thumb = '<img src="https://i.ytimg.com/vi/kS-2huMyQic/hqdefault.jpg">',
+              play = '<div class="play"></div>';
+          return thumb.replace("ID", id) + play;
+      }
+
+      function labnolIframe() {
+          var iframe = document.createElement("iframe");
+          var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+          iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("allowfullscreen", "1");
+          this.parentNode.replaceChild(iframe, this);
+      }
+      $('.modal').on('hidden.bs.modal', function (e) {
+          if($('.modal').hasClass('in')) {
+          $('body').addClass('modal-open');
+          }
+      });
+    </script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
+
+</body>
+
+</html>

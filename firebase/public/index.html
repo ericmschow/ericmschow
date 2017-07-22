@@ -252,16 +252,29 @@
             <h4 class="modal-title" id="myModalLabel"><a href="#">A Better Setlist</a></h4>
           </div>
           <div class="modal-body">
-            <a href="#">This</a> is a placeholder until the individual project is done.
+            <a href="https://setlist.ericmschow.com">A Better Setlist</a> solves a real-world
+            problem my band faces: having to make and re-make setlists for every show and manually check that
+            our chosen songs won't go beyond our time slot. <br><br>
+            Intended for mobile use, it stores your songs persistently to your device to allow setlists
+            to be made quickly and easily. It also has a PDF export feature, to facilitate printing copies
+            to take on stage.
             <br> <br>
+            I also wanted to practice data visualization, so I added a feature using Recharts (based on D3)
+            to view graphs of the setlist to see how the song intensity and crowd response changes as the
+            show progresses.
 
-
-            <br> <br> Please check out the back-end code below:
+            <br> <br> Please check out the <a href="https://www.github.com/ericmschow/a-better-setlist">GitHub repo</a>:
             <br> <br>
+            <div class="img-responsive">
+               <a href="https://www.github.com/ericmschow/a-better-setlist"><img src="/img/setlist-code4.png"
+                 alt="Setlist code excerpt with a cool tilt shift effect courtesy of Marmoset"
+                 style="max-width: 80%; border: 1px solid #4caf50"
+                 class="center-block"></a>
+            </div>
             <!-- <hr class="small green"> -->
             <!-- <iframe src="https://codepen.io/ericmschow/full/xrzggw" height="800" width="800"></iframe>  -->
-            <p data-height="300" data-theme-id="30320" data-slug-hash="xrzggw" data-default-tab="js" data-user="ericmschow" data-embed-version="2" data-pen-title="ScoreHoard" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/ericmschow/pen/xrzggw/">ScoreHoard</a> by Eric (<a href="https://codepen.io/ericmschow">@ericmschow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            <!-- <p data-height="300" data-theme-id="30320" data-slug-hash="xrzggw" data-default-tab="js" data-user="ericmschow" data-embed-version="2" data-pen-title="ScoreHoard" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/ericmschow/pen/xrzggw/">ScoreHoard</a> by Eric (<a href="https://codepen.io/ericmschow">@ericmschow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
@@ -283,18 +296,19 @@
                                   <img id="scorehoard" class="img-portfolio img-responsive"
                                   src="img/scorehoard-logo-500x333.png"
                                   alt="ScoreHoard gorilla logo"
-                                  data-toggle="modal" data-target="#ScorehoardModal">
+                                  data-toggle="modal" data-target="#ScorehoardModal"
+                                  style="">
 
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <!-- <a href="#"> -->
-                                    <img class="img-portfolio img-responsive"
-                                    src="img/portfolio-2.jpg"
-                                    alt="Setlist logo"
-                                    data-toggle="modal" data-target="#SetlistModal">
-                                <!-- </a> -->
+
+                                  <img id="setlist" class="img-portfolio img-responsive"
+                                  src="img/setlist-logo-500x333.png"
+                                  alt="Setlist logo"
+                                  data-toggle="modal" data-target="#SetlistModal">
+
                             </div>
                         </div>
                         <!-- <div class="col-md-6">

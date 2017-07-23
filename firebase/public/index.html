@@ -214,36 +214,6 @@
     </aside>
 
     <!-- Portfolio -->
-    <div class="modal fade" id="ScorehoardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close orange" data-dismiss="modal" aria-label="Close"><span class='orange' aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"><a href="www.scorehoard.com">ScoreHoard</a></h4>
-          </div>
-          <div class="modal-body">
-            <a href="www.scorehoard.com">ScoreHoard</a> is an API that keeps track of stats and scores for video game makers.
-            Version 1.0.0 allows Add Requests (to add usernames and scores into our database)
-            and Leaderboard Requests (to retrieve stored data for your game).
-            <br> <br>
-            In this four-person project, I worked primarily on the back-end in a
-            paired-programming setup,
-            and I also developed the front-end interface for the API in the game demo featured
-            on the website.
-
-            <br> <br> Please check out the <a href="github.com/antweer/scorehoard">GitHub repo</a> or the back-end code below:
-            <br> <br>
-            <!-- <hr class="small green"> -->
-            <!-- <iframe src="https://codepen.io/ericmschow/full/xrzggw" height="800" width="800"></iframe>  -->
-            <p data-height="300" data-theme-id="30320" data-slug-hash="xrzggw" data-default-tab="js" data-user="ericmschow" data-embed-version="2" data-pen-title="ScoreHoard" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/ericmschow/pen/xrzggw/">ScoreHoard</a> by Eric (<a href="https://codepen.io/ericmschow">@ericmschow</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="modal fade" id="SetlistModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -282,6 +252,39 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="ScorehoardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close orange" data-dismiss="modal" aria-label="Close"><span class='orange' aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"><a href="www.scorehoard.com">ScoreHoard</a></h4>
+          </div>
+          <div class="modal-body">
+            <a href="www.scorehoard.com">ScoreHoard</a> is an API that keeps track of stats and scores for video game makers.
+            Version 1.0.0 allows Add Requests (to add usernames and scores into our database)
+            and Leaderboard Requests (to retrieve stored data for your game).
+            <br> <br>
+            In this four-person project, I worked primarily on the back-end (app.js) in a
+            pair-programming setup,
+            and I also developed the front-end interface for the API in the game demo featured
+            on the website.
+
+            <br> <br> Please check out the <a href="https://www.github.com/antweer/scorehoard">GitHub repo</a>:
+            <br> <br>
+            <!-- <hr class="small green"> -->
+            <a href="https://www.github.com/antweer/scorehoard"><img src="/img/scorehoard-code2.png"
+              alt="ScoreHoard code excerpt with a cool tilt shift effect courtesy of Marmoset"
+              style="max-width: 80%; border: 1px solid #4caf50"
+              class="center-block"></a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
@@ -289,6 +292,17 @@
                     <h2>My Projects</h2>
                     <hr class="small portfolio-accent">
                     <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+
+                                  <img id="setlist" class="img-portfolio img-responsive"
+                                  src="img/setlist-logo-500x333.png"
+                                  alt="Setlist logo"
+                                  data-toggle="modal" data-target="#SetlistModal">
+
+                            </div>
+                        </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                               <!-- <h4>ScoreHoard</h4> -->
@@ -298,16 +312,6 @@
                                   alt="ScoreHoard gorilla logo"
                                   data-toggle="modal" data-target="#ScorehoardModal"
                                   style="">
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-
-                                  <img id="setlist" class="img-portfolio img-responsive"
-                                  src="img/setlist-logo-500x333.png"
-                                  alt="Setlist logo"
-                                  data-toggle="modal" data-target="#SetlistModal">
 
                             </div>
                         </div>
